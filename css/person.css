@@ -2,13 +2,13 @@
 	
 	@font-face {
 	    font-family: 'LeagueGothic-Regular';
-	    src: url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.otf') format('opentype'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.woff') format('woff'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.ttf') format('truetype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
+	    src: url('/font/LeagueGothic-Regular/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), url('/font/LeagueGothic-Regular/LeagueGothic-Regular.otf') format('opentype'), url('/font/LeagueGothic-Regular/LeagueGothic-Regular.woff') format('woff'), url('/font/LeagueGothic-Regular/LeagueGothic-Regular.ttf') format('truetype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/font/LeagueGothic-Regular/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
 	}
 	@font-face {
 	    font-family: 'AmaticSC-Bold';
-	    src: url('/fonts/AmaticSC-Bold/AmaticSC-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.woff') format('woff'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.ttf') format('truetype'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.svg#AmaticSC-Bold') format('svg');
+	    src: url('/font/AmaticSC-Bold/AmaticSC-Bold.eot?#iefix') format('embedded-opentype'), url('/font/AmaticSC-Bold/AmaticSC-Bold.woff') format('woff'), url('/font/AmaticSC-Bold/AmaticSC-Bold.ttf') format('truetype'), url('/font/AmaticSC-Bold/AmaticSC-Bold.svg#AmaticSC-Bold') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
 	}
