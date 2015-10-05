@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Mie de Pain: de l'urgence à l'insertion</title>
+    <link href="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/css/person.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+    <!-- Start of Woopra Code -->
+<script>
+function extractUrlParams(){    
+    var t = document.location.search.substring(1).split('&'); var f = [];
+    for (var i=0; i<t.length; i++){
+        var x = t[ i ].split('=');
+        f[x[0]]=decodeURIComponent(x[1]);
+    }
+    return f;
+};
+
+(function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+    domain: 'miedepain.asso.fr'
+});
+
+var p = extractUrlParams();
+
+if ('email' in p) {
+    if ('lastname' in p && 'firstname' in p) {
+        woopra.identify({
+            email: p['email'],
+            name: p['firstname'] + ' ' + p['lastname']
+        });
+    } else {woopra.identify({email: p['email']})}
+}
+
+woopra.track();
+</script>
+<!-- End of Woopra Code -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="http://www.miedepain.asso.fr" target="_blank">
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/logo.png" alt="logo de La Mie de Pain" style="margin-top:10px;">
+                    </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-offset-6 col-md-6 center">
+                    <h2>de l'urgence à</h2>
+                    <h1>L’INSERTION</h1>
+                    <p>Redonnez un toit et un avenir aux personnes sans-abri,
+                        <br>menacées par le froid et les privations.</p>
+                    <a href="#geste-solidaire">
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/bouton-je-fais-un-don.png" alt="Bouton: je fais un don">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="box-don">
+        <div class="container center">
+            <div class="row">
+                <div style="display:inline-block">
+                    <div class="compteur">
+                        <p class="barre">
+                            <span id="progress_don"></span>
+                        </p>
+                    </div>
+                </div>
+                <div style="display:inline-block">
+                    <p class="somme">&nbsp;
+                        <span id="amount_collected">0</span>€</p>
+                    <p class="somme">/ 80 000€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ban-info">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/ban-info.jpg" alt="ban-info partie 1">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/ban-info2-n.jpg" alt="ban-info partie 2">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/ban-info3.jpg" alt="ban-info partie 3">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/ban-info4.jpg" alt="ban-info partie 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="t_body">
+        <br>
+        <br>
+        <div class="container">
+            <div id="bloc-to-center" class="bloc-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/24h.jpg" alft="image 24H">
+                        <div style="display:inline-block;vertical-align: bottom" class="margin-h3-24h">
+                            <h3>au nouveau refuge</h3>
+                            <h3>avec Patrick</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div style="margin-left:30px;margin-right: 30px;">
+                            <p>Comme près de 150 000 personnes en France, Patrick s’est retrouvé brutalement à la rue, sans savoir vers qui se tourner. Grâce à La Mie de Pain, il bénéficie désormais d’une vraie chambre où se poser, de 3 repas chauds quotidiens, de premiers soins médicaux et d’un accompagnement social pour reconstruire sa vie…</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="video" style="margin-left:15px">
+                   <iframe src="//player.vimeo.com/video/109016081?title=0&amp;byline=0&amp;portrait=0&amp;color=b3081b" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+                </div>
+
+                <br>
+                <br>
+                <div id="temoignage" class="row" style="margin-left:15px;">
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/temoignage2.png" alt="Photo de Jean Philippe" class="hide-for-desktop">
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/temoignage2-trait.png" alt="Photo de Jean Philippe" class="hide-for-tab-mob">
+                            </div>
+                            <div class="col-sm-6">
+                                <br>
+                                <br>
+                                <p class="name">Jean-Philippe&nbsp;
+                                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/trait-gris-haut-2.png" alt="trait gris" class="hide-for-tab-mob">
+                                </p>
+                                <p class="describ">Bénévole</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="citation">
+                                    <span class="guillemet">“</span>&nbsp;&nbsp;Je sers en moyenne 500 à 600 repas le soir, et je me sens vraiment utile.&nbsp;&nbsp;
+                                    <span class="guillemet bottom">”</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/temoignage.png" alt="Photo de Jean Philippe" class="hide-for-desktop">
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/temoignage-trait.png" alt="Photo de Jean Philippe" class="hide-for-tab-mob">
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br>
+                                        <br>
+                                        <p class="name">Christophe Piedra&nbsp;
+                                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/trait-gris-haut-2.png" alt="trait gris" class="hide-for-tab-mob">
+                                        </p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="describ">Directeur du nouveau Refuge</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p><a class="bt-voir" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/La-Mie-de-Pain-temoignage-Christophe-Piedra.pdf" target="blank">Voir son témoignage</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <div class="row">
+                    <div class="margin">
+                        <h3>des structures complémentaires</h3>
+                        <h3>pour accompagner vers la reinsertion</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="margin">
+                        <div class="col-sm-6" style="padding-left:0;padding:0;">
+                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/arche-new.jpg" alt="image d'une personne reconfortant une autre" style="margin-bottom:5px;margin-top:5px;" class="center">
+                            <h4>/ L’Arche d’Avenirs</h4>
+                            <p>Le plus important accueil de jour de France,
+                                <br>avec plus de 350 passages quotidiens, permet
+                                <br>aux sans-abri de rester propres, nettoyer leur linge
+                                <br>et bénéficier d’un premier soutien social ou psychologique.</p>
+                        </div>
+                        <div class="col-sm-6" style="padding-left:0;padding:0;">
+                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/la-plateform.jpg" alt="image d'une discussion dans un bureau" style="margin-bottom:5px;margin-top:5px;" class="center">
+                            <h4>/ La Plateforme – Relais Social</h4>
+                            <p>Grâce à ses multiples services visant à orienter et à insérer les plus en difficulté, la Plateforme accueille chaque jour 90 personnes. Elle propose un accompagnement vers l’accès aux droits, à la santé, à l’emploi, et au logement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/fleche.jpg" alt="fleche jaune" class="fleche">
+    <div id="geste-solidaire">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <p id="title-geste">faites un geste solidaire
+                    </p>
+                    <p id="subtitle-geste">aidez une personne sans-abri à passer de l'urgence à l'insertion</p>
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/soulignage.jpg" alt="soulignement spécial">
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-md-4 col-sm-6" id="solidarite-bloc-left">
+                    <p class="price price-one">25€</p>
+                    <p class="solidarite-infos">5 mois de domiciliation
+                        <br>(adresse administrative)
+                        <br>à la Plateforme – Relais Social</p>
+                    <p class="deduction">Soit 6,25€ après déduction fiscale</p>
+                    <div>
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/image-don.jpg" alt="image-don">
+                    </div>
+                    <div>
+                        <a href="https://donner.miedepain.asso.fr/b?cid=16&amount=2500" target="_blank">
+                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/bouton-je-fais-un-don.jpg" alt="bouton de don">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" id="solidarite-bloc-mid">
+                    <p class="price price-two">55€</p>
+                    <p class="solidarite-infos">24h au nouveau Refuge<br> 1 hébergement en chambre
+                        <br>3 repas chauds
+                        <br>1 accès aux premiers soins</p>
+                    <p class="deduction">Soit 13,75€ après déduction fiscale</p>
+                    <div>
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/image-don2.jpg" alt="image-don2">
+                    </div>
+                    <div>
+                        <a href="https://donner.miedepain.asso.fr/b?cid=16&amount=5500" target="_blank">
+                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/bouton-je-fais-un-don.jpg" alt="bouton de don">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" id="solidarite-bloc-right">
+                    <p class="price price-three">80€</p>
+                    <p class="solidarite-infos">6 journées d’accueil
+                        <br>de jour à l’Arche d’Avenirs</p>
+                    <p class="deduction">Soit 20€ après déduction fiscale</p>
+                    <div>
+                        <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/image-don3.jpg" alt="image-don3">
+                    </div>
+                    <div>
+                        <a href="https://donner.miedepain.asso.fr/b?cid=16&amount=8000" target="_blank">
+                            <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/bouton-je-fais-un-don.jpg" alt="bouton de don">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row center">
+                <div class="margin">
+                    <p id="autre-montant"><a href="https://donner.miedepain.asso.fr/b?cid=16" target="_blank">> Je donne un autre montant</a>
+                    </p>
+                </div>
+                <div class="margin" id="montant">
+                    <p>75% du montant de votre don est déductible de vos impôts sur le revenu
+                        <br>jusqu’à 526 €, puis 66% au-delà. Ainsi, un don de 60 € vous revient à 15 €, si vous êtes imposable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/fin-fleche.jpg" alt="fin du bloc flèche jaune" class="fleche">
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <br>
+                <br>
+                <div class="col-md-6">
+                    <div class="col-md-12" id="footer-txt-first">
+                        <h3>Qui sommes nous ?</h3>
+                        <p>L’association La Mie de Pain, fondée en 1887 par Paulin Enfert, est une association reconnue d’utilité publique qui vient en aide aux personnes en situation de précarité, d’exclusion et de marginalisation. Sa mission principale est de fournir une aide d’urgence à ces personnes (accueillir, nourrir et héberger) et d’accompagner leur réinsertion sociale et professionnelle. Elle agréée par le Comité de la charte – Don en confiance.</p>
+                        <div class="more">
+                            <p>
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/puce.jpg" alt="puce"><a href="http://www.miedepain.asso.fr/nos-missions-nos-actions/" target="_blank">En savoir plus</a>
+                            </p>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-md-12" id="footer-txt-mid">
+                        <br>
+                        <br>
+                        <h3>chiffres clés</h3>
+                        <p>En quelques chiffres, La Mie de Pain, c’est chaque jour :</p>
+                        <ul>
+                            <li>1000 personnes aidées au sein de 6 établissements sociaux</li>
+                            <li>360 places d’hébergement d’urgence</li>
+                            <li>Plus de 600 repas chauds préparés et distribués</li>
+                            <li>350 accueils de jour</li>
+                        </ul>
+                        <div class="more">
+                            <p>
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/puce.jpg" alt="puce"><a href="http://www.miedepain.asso.fr" target="_blank">En savoir plus</a>
+                            </p>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12" id="footer-txt-last">
+                        <h3>Transparence financière</h3>
+                        <p>La confiance que nous entretenons avec nos donateurs et tous nos soutiens divers et variés est essentielle. C’est pourquoi nous œuvrons à rendre nos comptes, nos ressources et nos pratiques totalement limpides.
+                            <br>
+                            <br>Etre transparent aux yeux de ceux qui nous supportent, c’est participer à la construction d’un climat de confiance indispensable pour nous permettre d’exister. Les comptes de La Mie de Pain sont annuellement soumis aux contrôles d’un Commissaire aux comptes et du Préfet de région.
+                            <br>
+                            <br>Les comptes de l’association pour l’année 2013 ont été certifiés. Cette certification donne lieu à la présentation des comptes annuels de La Mie de Pain sous la forme d’un bilan et d’un compte de résultat.</p>
+                        <div class="more">
+                            <p>
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/puce.jpg" alt="puce"><a href="http://www.miedepain.asso.fr/nos-comptes/" target="_blank">En savoir plus</a>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-offset-9 col-sm-offset-5">
+                                <br>
+                                <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/confiance.jpg" alt="logo de confiance">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="border-top:1px solid #252525" id="links-footer">
+                <br>
+                <div style="margin-left:15px;">
+                    <div class="col-xs-6 col-sm-3"><a href="http://www.miedepain.asso.fr/mentions-legales/" target="_blank">Mentions légales</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3"><a href="http://www.miedepain.asso.fr/" target="_blank">Site institutionnel</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3"><a href="http://www.miedepain.asso.fr/contact/" target="_blank">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/js/bootstrap.min.js"></script>
+    <script src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/js/api-don.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/js/fluidvids.js"></script>
+    <script>
+    fluidvids.init({
+        selector: ['iframe'],
+        players: ['player.vimeo.com']
+    });
+    </script>
+    <!-- Code Google de la balise de remarketing -->
+    <!--
+Les balises de remarketing ne peuvent pas être associées aux informations personnelles ou placées sur des pages liées aux catégories à caractère sensible. Pour comprendre et savoir comment configurer la balise, rendez-vous sur la page http://google.com/ads/remarketingsetup.
+-->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 993053889;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/993053889/?value=0&amp;guid=ON&amp;script=0">
+        </div>
+    </noscript>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7968425-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
