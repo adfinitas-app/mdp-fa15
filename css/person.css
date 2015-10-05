@@ -2,13 +2,13 @@
 	
 	@font-face {
 	    font-family: 'LeagueGothic-Regular';
-	    src: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.otf') format('opentype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.woff') format('woff'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.ttf') format('truetype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
+	    src: url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.otf') format('opentype'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.woff') format('woff'), url('/fonts/LeagueGothic-Regular/LeagueGothic-Regular.ttf') format('truetype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/LeagueGothic-Regular/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
 	}
 	@font-face {
 	    font-family: 'AmaticSC-Bold';
-	    src: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/AmaticSC-Bold/AmaticSC-Bold.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/AmaticSC-Bold/AmaticSC-Bold.woff') format('woff'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/AmaticSC-Bold/AmaticSC-Bold.ttf') format('truetype'), url('https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/fonts/AmaticSC-Bold/AmaticSC-Bold.svg#AmaticSC-Bold') format('svg');
+	    src: url('/fonts/AmaticSC-Bold/AmaticSC-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.woff') format('woff'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.ttf') format('truetype'), url('/fonts/AmaticSC-Bold/AmaticSC-Bold.svg#AmaticSC-Bold') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
 	}
@@ -24,7 +24,7 @@
 	    font-size: Arial, Helvetica, sans-serif;
 	}
 	header {
-	    background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/bg.jpg");
+	    background-image: url("/images/bg.jpg");
 	    background-repeat: no-repeat;
 	    background-position: center;
 	    background-size: cover;
@@ -46,11 +46,11 @@
 	    text-transform: uppercase;
 	}
 	#ban-info {
-	    background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/ban-info-sampler.jpg");
+	    background-image: url("/images/ban-info-sampler.jpg");
 	    background-repeat: repeat;
 	}
 	#t_body {
-	    background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/t_body_sampler.jpg");
+	    background-image: url("/images/t_body_sampler.jpg");
 	    background-repeat: repeat;
 	}
 	.margin {
@@ -96,7 +96,7 @@
 	#progress_don {
 	    /*background: none repeat scroll 0 0 white;*/
 	    
-	    background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/sampler-don.jpg");
+	    background-image: url("/images/sampler-don.jpg");
 	    background-repeat: repeat;
 	    display: block;
 	    height: 15px;
@@ -227,7 +227,7 @@
 	    line-height: 2;
 	}
 	.bt-voir {
-	    background: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/mdp-2014/site/images/picto-plus.gif") no-repeat scroll 4px center #b2061a;
+	    background: url("/images/picto-plus.gif") no-repeat scroll 4px center #b2061a;
 	    border-radius: 3px;
 	    clear: both;
 	    color: #ffffff;
