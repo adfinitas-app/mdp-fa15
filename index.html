@@ -60,6 +60,15 @@ threads.load=function(o){var i=n.createElement("script"),c="https:"===n.location
 threads.load("{{page.threads_id}}"),
 threads.page()}}(window,document);
 </script>
+<script type="text/javascript">
+threads.identify(p['email'], {
+  email: p['email'],
+  firstname: p['firstname'],
+  lastname: p['lastname']
+});
+</script>
+
+
 </head>
 
 <body>
