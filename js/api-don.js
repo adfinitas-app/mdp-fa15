@@ -5,7 +5,7 @@ $(function() {
             data: {
                 "user_api": "umdpapi",
                 "pwd_api": "drR3tmYQ",
-                "campaigns[]": [16, 17]
+                "campaigns[]": [23, 24, 25]
             }
         }).done(function(data, status, jqXHR) {
             if (data[0] == '1') {
