@@ -245,6 +245,8 @@
 	}
 	.bottom {
 	    vertical-align: top !important;
+	    top: 10px !important;
+        position: relative;
 	}
 	@media (max-width: 1000px) {
 	    #footer-txt-mid {
