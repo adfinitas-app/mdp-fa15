@@ -16,7 +16,7 @@ var ctaGrid    =   {
             myButton.on('click', function(e) {
                 e.preventDefault();
                 var whichOne = jQ(this).data().cta;
-                var woopraId = myInteraction[0] + whichOne + '-' + myInteraction[1];
+                var woopraId = myInteraction[0] + '-' + whichOne;
 
                 if (! myDebug) {
                     woopra.track('interaction', {
