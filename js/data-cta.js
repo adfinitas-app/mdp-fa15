@@ -5,7 +5,7 @@ var _DATA_CTA = {
 
   // - Ajout des CTA avec action éclaté pour WoopraTrack
   //woopra_interaction :   ['don-IMG', '_ete2015'],
-    woopra_interaction: ['cta_don-noel15'],
+    woopra_interaction: ['cta_don-noel15', ""],
 
   segments : {
     'OPTIN':    {'arrondiSup':0, 'type': 'fixe', 'values':[25,55,80]} ,
