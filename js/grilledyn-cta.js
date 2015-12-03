@@ -12,7 +12,7 @@ var ctaGrid    =   {
     },
 
         woopracta: function(myDebug, myLink, myButton) {
-            var myInteraction = _DATA_CTA.segments;
+            var myInteraction = _DATA_CTA.woopra_interaction;
             myButton.on('click', function(e) {
                 e.preventDefault();
                 var whichOne = jQ(this).data().cta;
