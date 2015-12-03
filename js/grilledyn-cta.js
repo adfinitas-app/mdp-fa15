@@ -23,7 +23,7 @@ var ctaGrid    =   {
                         category: woopraId,
                         action: "clic",
                         url: document.location.href,
-                        value: don,
+                        //value: don,
                         title: document.title
                     });
                 }
