@@ -16,14 +16,14 @@ var ctaGrid    =   {
             myButton.on('click', function(e) {
                 e.preventDefault();
                 var whichOne = jQ(this).data().cta;
-                var woopraId = myInteraction[0] + '-' + whichOne;
+                var woopraId = myInteraction[0] + whichOne + '-' + myInteraction[1];
 
                 if (! myDebug) {
                     woopra.track('interaction', {
-                        category: woopraId,
+                        category: myInteraction,
                         action: "clic",
                         url: document.location.href,
-                        //value: don,
+                        value: "",
                         title: document.title
                     });
                 }
@@ -46,7 +46,6 @@ var ctaGrid    =   {
         },
         // Création fenetre
         newWindow: function(url) {
-	  console.log(url);
             var win = window.open(url, '_blank');
             win.focus();
             return false;
