@@ -196,10 +196,17 @@
 	}
 	#adFdon-parent :nth-child(2) {
 	    border-left: 1px solid #8d040d;
+        border-right: 1px solid #D90C29;
 	    margin-bottom: 15px;
 	}
 	#adFdon-parent :last-child {
 	    border-bottom: 1px solid #252525;
+	}
+	#adFdon-parent :nth-child(2) .price-one {
+	    font-size: 64px;
+	}
+	#adFdon-parent :last-child .price-one {
+	    font-size: 80px;
 	}
 	#solidarite-bloc-left {
 	    border-right: 1px solid #d90c29;
