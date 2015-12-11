@@ -6,7 +6,6 @@ var     urlBySegment = {
                 var segment = data.segments[mySegment];
                 //console.log(segment);
                 var url = "";
-                var frontURL = "";
                 var montants = [];
                 if (segment.type == "addition")
                 {
@@ -18,6 +17,11 @@ var     urlBySegment = {
                     montants    = this.percent(segment, segAmount);
                     url         = this.generateUrl(montants);
                 }
+                else if (segment.type == "fixe")
+                {
+                    montants    = this.fixe(segment, segAmount);
+                    url         = this.generateUrl(montants);
+                }
                 else if (segment.type == "libre")
                 {
                     var newAmout    =   (mySegment == "GD") ? "" : segAmount*100 ;
@@ -27,19 +31,24 @@ var     urlBySegment = {
                     var newAmout    =   segAmount*100 ;
                     url             =   '&amount='+newAmout+'&once_grid[]=';
 		}
-                //console.log(myUrlParams.getAll());
 
+		if (typeof data.iraiser_cid == 'number') {
+		  var frontURL = "/b?";
+                  frontURL += "cid=" + data.iraiser_cid;
+		} else if (typeof data.iraiser_cid == "object"){
+		  var frontURL = "/ab?";
+		  for (i in data.iraiser_cid) {
+		    // ajouter la "&" seulement si il y a un index prochain
+		    frontURL += "cids[]=" + data.iraiser_cid[i] + "&";
+		  }
+		}
                 if (segment.iraiser_params != undefined)
                 {
                     for (j in segment.iraiser_params)
                     {
-                        frontURL += (j != "cid") ? '&'+j+'='+segment.iraiser_params[j] : segment.iraiser_params[j];
+                        frontURL += '&' + j + '=' + segment.iraiser_params[j];
 
                     }
-                }
-                else
-                {
-                    frontURL = data.iraiser_cid;
                 }
                 return frontURL + url + myUrlParams.getAll();
             },

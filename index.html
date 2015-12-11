@@ -243,7 +243,26 @@ threads.identify(p['email'], {
                     <img src="/images/soulignage.jpg" alt="soulignement spécial">
                 </div>
             </div>
-            <div class="row center">
+	    <div class="row center">
+	      <div id="adFdon-parent" style="display: none;">
+		<div class="adFclone">
+		  <div class="adFwrapper {{CLASS}} col-md-4 col-sm-6" id="{{ID}}">
+		    <p class="price price-one">{{AMOUNT}}€</p>
+		    <p class="solidarite-infos">{{TEXT}}</p>
+		    <p class="deduction">{{DEDUCTION}}</p>
+		    <div>
+		      <img src="{{IMGILLUS}}" alt="image-don">
+		    </div>
+		    <div>
+		      <a href="{{LINK}}" target="_blank">
+			<img src="/images/bouton-je-fais-un-don.jpg" alt="bouton de don">
+		      </a>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+            <div class="row center adFstatic">
                 <div class="col-md-4 col-sm-6" id="solidarite-bloc-left">
                     <p class="price price-one">25€</p>
                     <p class="solidarite-infos">5 mois de domiciliation
@@ -412,6 +431,8 @@ Les balises de remarketing ne peuvent pas être associées aux informations pers
     <script type="text/javascript" src="/js/grille-gridtools.js"></script>
     <script type="text/javascript" src="/js/grille-recupurl.js"></script>
     <script type="text/javascript" src="/js/grilledyn-cta.js"></script>
+    <script type="text/javascript" src="/js/grilledyn-imgs.js"></script>
+    <script type="text/javascript" src="/js/data-imgs.js"></script>
     <script type="text/javascript" src="/js/loader-jquery.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
