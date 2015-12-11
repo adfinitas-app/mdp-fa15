@@ -207,6 +207,7 @@
 	}
 	#adFdon-parent :last-child .price-one {
 	    font-size: 80px;
+	    line-height: 1;
 	}
 	#solidarite-bloc-left {
 	    border-right: 1px solid #d90c29;
