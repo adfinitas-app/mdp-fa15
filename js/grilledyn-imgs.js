@@ -15,6 +15,7 @@ var imgsGrid    =   {
       var ID   = 'img-' + bl;
       var CL   = ( (myAmount >= prevAmount) && (myAmount <= data.amount)) ? 'active' : '' ;
      prevAmount = data.amount;
+     console.log(data);
 
       HTML = this.replaceAll(HTML, '{{AMOUNT}}', data.amount);
       HTML = this.replaceAll(HTML, '{{TEXT}}', data.text);
